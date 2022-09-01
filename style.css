@@ -85,12 +85,15 @@ body {
 
 /* la partie Texte du Haut */
 h1 {
-  font-weight: 600;
-  color: var(--White);
   margin: 1.25rem 0; /* Equivalent à 20px */
 }
+.title {
+  font-weight: 600;
+  font-size: 36px;
+  color: var(--White);
+}
 
-h1:hover {
+.title:hover {
   cursor: pointer;
   color: var(--cyan);
 }
@@ -105,67 +108,74 @@ h1:hover {
 .top {
   letter-spacing: 3px;
   line-height: 1.5;
+  max-width: 400px;
 }
+
+ul {
+  list-style-type: none;
+}
+
 .left {
   font-weight: bold;
   color: var(--cyan);
-  margin-right: 11.438rem; /* Equivalent à 183px */
+  margin-right: 10rem; /* Equivalent à 183px */
 }
 
 .right {
   font-weight: bold;
   color: var(--softBlue);
   text-align: right;
+  position: relative;
+  bottom: 23px;
 }
-
-.line {
+hr {
   color: var(--Verydarkblue-line);
-  margin: 1.25rem 0 0.5rem 0; 
+  margin: 0px 0 5px 0; 
 }
 
 /* la partie Texte du Bas */
-section {
+footer {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
 }
 
-section .profil-picture {
+footer .profil-picture {
   width: 1.875rem; /* Equivalent à 30px */
   border-radius: 100%;
   border: 2px solid #fff;
 }
-section .profil-picture:hover {
+footer .profil-picture:hover {
   width: 3.75rem; /* Equivalent à 60px */
   border: 2px solid var(--cyan);
 }
-section .bottom {
+footer .bottom {
   margin-left: 1.25rem; /* Equivalent à 20px */
   letter-spacing: normal;
 }
 
-section .artist {
+footer .artist {
   color: #fff;
   font-weight: bold;
 }
 
-section .artist:hover {
+footer .artist:hover {
   cursor: pointer;
   color: var(--cyan);
 }
 
-/* "Footer" sous la carte "main" */
-.attribution {
+/* "Aside" sous la carte "main" */
+aside {
   font-size: 11px;
   text-align: center;
   color: #fff;
-  padding-top: 0.625rem; /* Equivalent à 10px */
+  margin-top: 0.625rem; /* Equivalent à 10px */
 }
-.attribution a {
+aside a {
   color: hsl(228, 45%, 44%);
 }
-.attribution a:hover {
+aside a:hover {
   color: var(--cyan);
   font-weight: bold;
 }
